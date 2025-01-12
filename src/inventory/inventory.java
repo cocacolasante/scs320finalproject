@@ -16,8 +16,8 @@ public class inventory {
             automobile car = new automobile("honda", "Accord", "black", 2025);
 
             // get car info in string, split string, loop through string array and print info to terminal
-            String carinfo = car.listing();
-            String[] splitInfo = carinfo.split(",");
+            String carInfo = car.listing();
+            String[] splitInfo = carInfo.split(",");
             for(String info : splitInfo){
                 System.out.println(info);
             }
@@ -93,7 +93,7 @@ public class inventory {
                 }
             }
             
-
+            scanner.close();
         }catch(Exception e){
             System.err.println(e);
         }
